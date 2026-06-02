@@ -59,6 +59,7 @@ export function DateRangeField({ label, placeholder, value, onChange }) {
         <button
           type="button"
           onClick={() => setOpen((current) => !current)}
+          aria-label="Select date range"
           className="flex-1 px-3 text-left text-[13px] font-normal leading-none tracking-[0.01em] text-[#636264]"
         >
           {value ? formatDate(value) : placeholder}
@@ -71,6 +72,7 @@ export function DateRangeField({ label, placeholder, value, onChange }) {
               onChange(null)
               setOpen(false)
             }}
+            aria-label="Clear date range"
             className="flex h-full w-[27px] items-center justify-center border-r border-[#dedede] bg-[#ebebeb] text-[#5f5f5f]"
           >
             <PlusIcon className="h-6 w-6" />
@@ -80,6 +82,7 @@ export function DateRangeField({ label, placeholder, value, onChange }) {
         <button
           type="button"
           onClick={() => setOpen((current) => !current)}
+          aria-label="Select date range"
           className="flex h-full w-[27px] items-center justify-center border-l border-[#dedede] bg-[#ebebeb] text-[#5f5f5f]"
         >
           <CalendarIcon className="h-6 w-6" />
