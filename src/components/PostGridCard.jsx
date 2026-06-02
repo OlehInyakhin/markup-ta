@@ -10,7 +10,7 @@ export function PostGridCard({ post }) {
       />
 
       <div className="grid h-[138px] grid-rows-[auto_auto_1fr] px-3 pb-3 pt-3">
-        <div className="grid grid-cols-2 items-start gap-3">
+        <div className="grid grid-cols-[auto_1fr] items-start gap-3">
           <p className="text-[16px] font-medium leading-none text-black">{post.dayLabel}</p>
           <p className="text-right text-[16px] font-medium leading-none text-black">{post.dateLabel}</p>
         </div>
